@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, Response
+h1ER flask import Flask, jsonify, Response
 import random
 import threading
 
@@ -62,7 +62,7 @@ HTML = r"""<!DOCTYPE html>
 </head>
 <body>
   <main class="device">
-    <h1>KEY FINDER</h1>
+    <h1>KEY FINDER BY HAPPINESS</h1>
     <div class="screen" id="status">Status: DISCONNECTED</div>
     <div class="screen" id="signal">Signal: -- dBm | Dist: -- m</div>
     <div class="screen" id="battery">Battery: 100%</div>
@@ -72,9 +72,9 @@ HTML = r"""<!DOCTYPE html>
       <div><div class="buzzer" id="buzzer">(silent)</div><div>BUZZER</div></div>
     </div>
 
-    <button class="find" onclick="sendCommand('/api/find')">1. FIND KEY</button>
-    <button class="stop" onclick="sendCommand('/api/stop')">2. STOP</button>
-    <button class="pair" onclick="sendCommand('/api/pair')">3. PAIR / UNPAIR</button>
+    <button class="find" onclick="sendCommand('/api/find')">FIND KEY</button>
+    <button class="stop" onclick="sendCommand('/api/stop')">STOP</button>
+    <button class="pair" onclick="sendCommand('/api/pair')">PAIR / UNPAIR</button>
 
     <div id="notice" aria-live="polite"></div>
     <div class="note">Demonstration only — no physical key finder is connected.</div>
